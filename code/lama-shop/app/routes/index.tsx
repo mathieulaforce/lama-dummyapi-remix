@@ -10,6 +10,7 @@ import {
 } from '@mui/material';
 import DefaultTheme from '../theming/defaultTheme'; 
 import MenuIcon from '@mui/icons-material/Menu';
+import { Outlet } from '@remix-run/react';
 
 export default function Index() {
   return (
@@ -34,6 +35,7 @@ export default function Index() {
           </Toolbar>
         </AppBar>
       </Box>
+      <Outlet />
     </ThemeProvider>
   );
 }
