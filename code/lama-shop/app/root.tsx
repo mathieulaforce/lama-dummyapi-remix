@@ -1,5 +1,5 @@
 import type { MetaFunction } from '@remix-run/node';
-import { Analytics } from '@vercel/analytics/react';
+// import { Analytics } from '@vercel/analytics/react';
 import DefaultTheme from './theming/defaultTheme';
 import {
   Link,
@@ -19,7 +19,7 @@ import Typography from '@mui/material/Typography';
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
-  title: 'New Remix App',
+  title: 'LaMa Remix shop',
   viewport: 'width=device-width,initial-scale=1',
 });
 
@@ -56,7 +56,7 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   );
