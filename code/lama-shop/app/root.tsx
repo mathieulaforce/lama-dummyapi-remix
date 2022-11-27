@@ -1,6 +1,5 @@
 import type { MetaFunction } from '@remix-run/node';
 // import { Analytics } from '@vercel/analytics/react';
-import DefaultTheme from './theming/defaultTheme';
 import {
   Link,
   Links,
@@ -10,8 +9,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
-import { ThemeProvider } from '@emotion/react';
-import CssBaseline from '@mui/material/CssBaseline';
+ 
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -35,8 +33,7 @@ export default function App() {
         />
       </head>
       <body>
-        <ThemeProvider theme={DefaultTheme}>
-          <CssBaseline />
+       
           <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
               <Toolbar>
@@ -51,8 +48,7 @@ export default function App() {
               </Toolbar>
             </AppBar>
           </Box>
-          <Outlet />
-        </ThemeProvider>
+          <Outlet /> 
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
