@@ -17,8 +17,8 @@ const ProductCardContent:React.FC<ProductCardContentProps> = ({title, descriptio
       color="text.secondary"
       overflow="hidden"
       sx={{
-        '-webkit-line-clamp': '3',
-        '-webkit-box-orient': 'vertical',
+        WebkitLineClamp: '3',
+        WebkitBoxOrient: 'vertical',
         display: '-webkit-box',
       }}
     >
