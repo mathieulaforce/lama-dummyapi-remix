@@ -2,10 +2,12 @@ import type { ProductListResponse } from './types/productListResponse';
 import type{ ProductResponse } from './types/productResponse';
 
 export const fetchProducts = async (skip: number, limit: number) => {
+  console.log("fetching????", skip, limit)
     const res = await fetch(
         `https://dummyjson.com/products?skip=${skip}&limit=${limit}`
       );
       const fetchResult: ProductListResponse = await res.json(); 
+    
       return fetchResult;
 }
 
